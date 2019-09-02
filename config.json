@@ -1,0 +1,33 @@
+{
+    "Domain" : "org",
+    "Orderers": "orderer",
+    "Organizations":[
+        "Org1",
+        "Org2",
+        "Org3"
+    ],
+    "Peers" : {
+        "Org1" : [
+            "peer0.org1",
+            "peer1.org1"
+        ],
+        "Org2" : [
+            "peer0.org2"
+        ],
+        "Org3" : [
+            "peer0.org3"
+        ]
+    },
+    "Channels" : [
+        "channel1x2",
+        "channel1x3"
+    ],
+    "Channelorg" : {
+        "channel1x2" : [
+            "Org1", "Org2"
+        ],
+        "channel1x3" : [
+            "Org1", "Org3"
+        ]
+    }    
+}
